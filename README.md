@@ -1,6 +1,6 @@
 # Moptibet
 
-Moptibet will gather betting odd’s data from multiple sources, consolidate said data, and highlight betting opportunities, through both arbitrage due spreads in the market, as well as using predictive analytics to guess winners.
+Moptibet gathers betting odd’s data from multiple sources, consolidate said data, and highlight betting opportunities, through both arbitrage due spreads in the market, as well as using predictive analytics to guess winners.
  
 ## Getting Started
 
