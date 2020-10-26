@@ -7,7 +7,7 @@ api = Api(app)
 
 class Team(Resource):
     def get(self):
-        return get_odd_json()[0]
+        return get_odd_json()
 
 api.add_resource(Team, '/')
 

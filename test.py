@@ -21,13 +21,16 @@ output_cols = ['home_team','away_team', 'home_odds','tie_odds', 'away_odds', 'so
 
 options = Options()
 options.add_argument('--headless')
-options.add_argument('--window-size=1920,1200')
-DRIVER_PATH = 'driver/mac/chromedriver'
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
+chrome_prefs = {}
+options.experimental_options["prefs"] = chrome_prefs
+chrome_prefs['profile.default_content_settings'] = {"images":2}
 
 def get_odd_json():
     dn = []
     for key in prem_dir:
-        driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
+        driver = webdriver.Chrome(options=options)
         driver.get(prem_dir[key]['url'])
         driver.implicitly_wait(3)
 
