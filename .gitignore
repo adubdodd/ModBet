@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 credentials.txt
 __pycache__/
+.vscode/
+webscrape/.ipynb_checkpoints/
